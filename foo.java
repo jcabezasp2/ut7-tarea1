@@ -18,7 +18,7 @@ public class foo {
 		String result = "";
 		String greet = "";
 
-		greet = getSaludo(languages, greet);
+		greet = getGreet(languages, greet);
 
 		// Repeat greet repetitions times
 		for (int i =0;i <repetitions;i ++) {
@@ -31,20 +31,20 @@ public class foo {
 	/**
 	 *
 	 * @param languages chosen language
-	 * @param saludo String where will be saved the String
+	 * @param greet String where will be saved the String
 	 * @return the String with the greeting
 	 */
-	private String getSaludo(int languages, String saludo) {
+	private String getGreet(int languages, String greet) {
 		switch (languages) {
-			case 0 : saludo = "hola";
+			case 0 : greet = "hola";
 					 break;
-			case 1 : saludo = "hello";
+			case 1 : greet = "hello";
 					 break;
-			case 2 : saludo = "kaixo";
+			case 2 : greet = "kaixo";
 			 		 break;
 			 default:
 				 	 break;
 		 }
-		return saludo;
+		return greet;
 	}
 }
