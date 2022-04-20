@@ -14,9 +14,16 @@ public class foo {
 	 * @param repetitions how many times repeat greet
 	 * @return a String with the greeting
 	 */
+
+	final static int ESPAÑOL = 0;
+	final static int INGLES = 1;
+	final static int VASCO = 2;
+
 	public String greet_method (int languages, int repetitions) {
 		String result = "";
 		String greet = "";
+
+
 
 		greet = getGreet(languages, greet);
 
@@ -36,11 +43,11 @@ public class foo {
 	 */
 	private String getGreet(int languages, String greet) {
 		switch (languages) {
-			case 0 : greet = "hola";
+			case ESPAÑOL : greet = "hola";
 					 break;
-			case 1 : greet = "hello";
+			case INGLES : greet = "hello";
 					 break;
-			case 2 : greet = "kaixo";
+			case VASCO : greet = "kaixo";
 			 		 break;
 			 default:
 				 	 break;
